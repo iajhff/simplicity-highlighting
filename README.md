@@ -123,13 +123,7 @@ simplicity-editor-support/
 │   └── monaco-simplicityhl.js       # Monaco language support
 ├── data/
 │   └── jets-data.js                 # Comprehensive jet definitions
-├── examples/
-│   └── contracts/
-│       ├── p2pkh.simf              # Pay-to-Public-Key-Hash example
-│       └── htlc.simf               # Hash Time-Locked Contract example
-├── .gitignore
 ├── LICENSE
-├── package.json
 └── README.md
 ```
 
