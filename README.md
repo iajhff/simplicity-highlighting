@@ -1,8 +1,10 @@
 # Simplicity Editor Support
 
-Syntax highlighting, code completion, and IDE integration for the **Simplicity** smart contract language (Simfony dialect).
+**Web browser syntax highlighting and code completion** for the **Simplicity** smart contract language (Simfony dialect).
 
-Simplicity is a low-level programming language for Bitcoin and Liquid smart contracts, designed by Blockstream. This repository provides editor support for both **CodeMirror** and **Monaco Editor**.
+Simplicity is a low-level programming language for Bitcoin and Liquid smart contracts, designed by Blockstream. This repository provides **web-based** editor support for both **CodeMirror** and **Monaco Editor**, perfect for online IDEs, documentation sites, and interactive playgrounds.
+
+> **Note:** For desktop editor support, see the [official SimplicityHL VSCode extension](https://marketplace.visualstudio.com/items?itemName=Blockstream.simplicityhl) and [LSP server](https://github.com/BlockstreamResearch/SimplicityHL/tree/master/lsp) for VSCode, Neovim, and other LSP-compatible editors.
 
 ## Features
 
@@ -301,10 +303,29 @@ Contributions are welcome! Areas for improvement:
 - Add signature help (parameter hints)
 - Support for more advanced language features
 
+## Related Projects
+
+### Official Blockstream Tools
+- **[SimplicityHL](https://github.com/BlockstreamResearch/SimplicityHL)** - Official compiler and language implementation
+- **[VSCode Extension](https://marketplace.visualstudio.com/items?itemName=Blockstream.simplicityhl)** - Syntax highlighting for VSCode
+- **[LSP Server](https://github.com/BlockstreamResearch/SimplicityHL/tree/master/lsp)** - Language Server Protocol implementation (Rust-based) with diagnostics, completion, hover, and go-to-definition for desktop editors
+
+### Differences from Official LSP
+This repository is specifically designed for **web browsers** and provides:
+- Standalone JavaScript/CSS files for CodeMirror and Monaco
+- No server required - runs entirely in the browser
+- Ideal for documentation sites, online playgrounds, and web-based IDEs
+- Simpler setup for web integration
+
+The official LSP server is better suited for:
+- Desktop editors (VSCode, Neovim, Emacs, etc.)
+- Advanced features like real-time diagnostics and go-to-definition
+- Full language analysis and type checking
+
 ## Resources
 
 - [Simplicity Language Specification](https://github.com/BlockstreamResearch/simplicity)
-- [Simfony Documentation](https://github.com/BlockstreamResearch/simfony)
+- [SimplicityHL Compiler](https://github.com/BlockstreamResearch/SimplicityHL)
 - [CodeMirror Documentation](https://codemirror.net/5/doc/manual.html)
 - [Monaco Editor Documentation](https://microsoft.github.io/monaco-editor/)
 
